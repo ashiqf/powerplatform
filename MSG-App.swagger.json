@@ -1,0 +1,1059 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "MSG-App",
+    "description": "This is a test connector to communicate with MS Graph",
+    "version": "1.0"
+  },
+  "host": "graph.microsoft.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/beta/me": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "@odata.context": {
+                  "type": "string",
+                  "description": "@odata.context"
+                },
+                "id": {
+                  "type": "string",
+                  "description": "id"
+                },
+                "deletedDateTime": {
+                  "type": "string",
+                  "description": "deletedDateTime"
+                },
+                "accountEnabled": {
+                  "type": "boolean",
+                  "description": "accountEnabled"
+                },
+                "ageGroup": {
+                  "type": "string",
+                  "description": "ageGroup"
+                },
+                "businessPhones": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "businessPhones"
+                },
+                "city": {
+                  "type": "string",
+                  "description": "city"
+                },
+                "createdDateTime": {
+                  "type": "string",
+                  "description": "createdDateTime"
+                },
+                "creationType": {
+                  "type": "string",
+                  "description": "creationType"
+                },
+                "companyName": {
+                  "type": "string",
+                  "description": "companyName"
+                },
+                "consentProvidedForMinor": {
+                  "type": "string",
+                  "description": "consentProvidedForMinor"
+                },
+                "country": {
+                  "type": "string",
+                  "description": "country"
+                },
+                "department": {
+                  "type": "string",
+                  "description": "department"
+                },
+                "displayName": {
+                  "type": "string",
+                  "description": "displayName"
+                },
+                "employeeId": {
+                  "type": "string",
+                  "description": "employeeId"
+                },
+                "employeeHireDate": {
+                  "type": "string",
+                  "description": "employeeHireDate"
+                },
+                "employeeOrgData": {
+                  "type": "string",
+                  "description": "employeeOrgData"
+                },
+                "employeeType": {
+                  "type": "string",
+                  "description": "employeeType"
+                },
+                "faxNumber": {
+                  "type": "string",
+                  "description": "faxNumber"
+                },
+                "givenName": {
+                  "type": "string",
+                  "description": "givenName"
+                },
+                "imAddresses": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "imAddresses"
+                },
+                "infoCatalogs": {
+                  "type": "array",
+                  "items": {},
+                  "description": "infoCatalogs"
+                },
+                "isManagementRestricted": {
+                  "type": "string",
+                  "description": "isManagementRestricted"
+                },
+                "isResourceAccount": {
+                  "type": "string",
+                  "description": "isResourceAccount"
+                },
+                "jobTitle": {
+                  "type": "string",
+                  "description": "jobTitle"
+                },
+                "legalAgeGroupClassification": {
+                  "type": "string",
+                  "description": "legalAgeGroupClassification"
+                },
+                "mail": {
+                  "type": "string",
+                  "description": "mail"
+                },
+                "mailNickname": {
+                  "type": "string",
+                  "description": "mailNickname"
+                },
+                "mobilePhone": {
+                  "type": "string",
+                  "description": "mobilePhone"
+                },
+                "onPremisesDistinguishedName": {
+                  "type": "string",
+                  "description": "onPremisesDistinguishedName"
+                },
+                "officeLocation": {
+                  "type": "string",
+                  "description": "officeLocation"
+                },
+                "onPremisesDomainName": {
+                  "type": "string",
+                  "description": "onPremisesDomainName"
+                },
+                "onPremisesImmutableId": {
+                  "type": "string",
+                  "description": "onPremisesImmutableId"
+                },
+                "onPremisesLastSyncDateTime": {
+                  "type": "string",
+                  "description": "onPremisesLastSyncDateTime"
+                },
+                "onPremisesSecurityIdentifier": {
+                  "type": "string",
+                  "description": "onPremisesSecurityIdentifier"
+                },
+                "onPremisesSamAccountName": {
+                  "type": "string",
+                  "description": "onPremisesSamAccountName"
+                },
+                "onPremisesSyncEnabled": {
+                  "type": "string",
+                  "description": "onPremisesSyncEnabled"
+                },
+                "onPremisesUserPrincipalName": {
+                  "type": "string",
+                  "description": "onPremisesUserPrincipalName"
+                },
+                "otherMails": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "otherMails"
+                },
+                "passwordPolicies": {
+                  "type": "string",
+                  "description": "passwordPolicies"
+                },
+                "passwordProfile": {
+                  "type": "string",
+                  "description": "passwordProfile"
+                },
+                "postalCode": {
+                  "type": "string",
+                  "description": "postalCode"
+                },
+                "preferredDataLocation": {
+                  "type": "string",
+                  "description": "preferredDataLocation"
+                },
+                "preferredLanguage": {
+                  "type": "string",
+                  "description": "preferredLanguage"
+                },
+                "proxyAddresses": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "proxyAddresses"
+                },
+                "refreshTokensValidFromDateTime": {
+                  "type": "string",
+                  "description": "refreshTokensValidFromDateTime"
+                },
+                "showInAddressList": {
+                  "type": "string",
+                  "description": "showInAddressList"
+                },
+                "signInSessionsValidFromDateTime": {
+                  "type": "string",
+                  "description": "signInSessionsValidFromDateTime"
+                },
+                "state": {
+                  "type": "string",
+                  "description": "state"
+                },
+                "streetAddress": {
+                  "type": "string",
+                  "description": "streetAddress"
+                },
+                "surname": {
+                  "type": "string",
+                  "description": "surname"
+                },
+                "usageLocation": {
+                  "type": "string",
+                  "description": "usageLocation"
+                },
+                "userPrincipalName": {
+                  "type": "string",
+                  "description": "userPrincipalName"
+                },
+                "externalUserState": {
+                  "type": "string",
+                  "description": "externalUserState"
+                },
+                "externalUserStateChangeDateTime": {
+                  "type": "string",
+                  "description": "externalUserStateChangeDateTime"
+                },
+                "userType": {
+                  "type": "string",
+                  "description": "userType"
+                },
+                "assignedLicenses": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "disabledPlans": {
+                        "type": "array",
+                        "items": {},
+                        "description": "disabledPlans"
+                      },
+                      "skuId": {
+                        "type": "string",
+                        "description": "skuId"
+                      }
+                    }
+                  },
+                  "description": "assignedLicenses"
+                },
+                "assignedPlans": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "assignedDateTime": {
+                        "type": "string",
+                        "description": "assignedDateTime"
+                      },
+                      "capabilityStatus": {
+                        "type": "string",
+                        "description": "capabilityStatus"
+                      },
+                      "service": {
+                        "type": "string",
+                        "description": "service"
+                      },
+                      "servicePlanId": {
+                        "type": "string",
+                        "description": "servicePlanId"
+                      }
+                    }
+                  },
+                  "description": "assignedPlans"
+                },
+                "deviceKeys": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "keyType": {
+                        "type": "string",
+                        "description": "keyType"
+                      },
+                      "keyMaterial": {
+                        "type": "string",
+                        "description": "keyMaterial"
+                      },
+                      "deviceId": {
+                        "type": "string",
+                        "description": "deviceId"
+                      }
+                    }
+                  },
+                  "description": "deviceKeys"
+                },
+                "identities": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "signInType": {
+                        "type": "string",
+                        "description": "signInType"
+                      },
+                      "issuer": {
+                        "type": "string",
+                        "description": "issuer"
+                      },
+                      "issuerAssignedId": {
+                        "type": "string",
+                        "description": "issuerAssignedId"
+                      }
+                    }
+                  },
+                  "description": "identities"
+                },
+                "onPremisesExtensionAttributes": {
+                  "type": "object",
+                  "properties": {
+                    "extensionAttribute1": {
+                      "type": "string",
+                      "description": "extensionAttribute1"
+                    },
+                    "extensionAttribute2": {
+                      "type": "string",
+                      "description": "extensionAttribute2"
+                    },
+                    "extensionAttribute3": {
+                      "type": "string",
+                      "description": "extensionAttribute3"
+                    },
+                    "extensionAttribute4": {
+                      "type": "string",
+                      "description": "extensionAttribute4"
+                    },
+                    "extensionAttribute5": {
+                      "type": "string",
+                      "description": "extensionAttribute5"
+                    },
+                    "extensionAttribute6": {
+                      "type": "string",
+                      "description": "extensionAttribute6"
+                    },
+                    "extensionAttribute7": {
+                      "type": "string",
+                      "description": "extensionAttribute7"
+                    },
+                    "extensionAttribute8": {
+                      "type": "string",
+                      "description": "extensionAttribute8"
+                    },
+                    "extensionAttribute9": {
+                      "type": "string",
+                      "description": "extensionAttribute9"
+                    },
+                    "extensionAttribute10": {
+                      "type": "string",
+                      "description": "extensionAttribute10"
+                    },
+                    "extensionAttribute11": {
+                      "type": "string",
+                      "description": "extensionAttribute11"
+                    },
+                    "extensionAttribute12": {
+                      "type": "string",
+                      "description": "extensionAttribute12"
+                    },
+                    "extensionAttribute13": {
+                      "type": "string",
+                      "description": "extensionAttribute13"
+                    },
+                    "extensionAttribute14": {
+                      "type": "string",
+                      "description": "extensionAttribute14"
+                    },
+                    "extensionAttribute15": {
+                      "type": "string",
+                      "description": "extensionAttribute15"
+                    }
+                  },
+                  "description": "onPremisesExtensionAttributes"
+                },
+                "onPremisesProvisioningErrors": {
+                  "type": "array",
+                  "items": {},
+                  "description": "onPremisesProvisioningErrors"
+                },
+                "provisionedPlans": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "capabilityStatus": {
+                        "type": "string",
+                        "description": "capabilityStatus"
+                      },
+                      "provisioningStatus": {
+                        "type": "string",
+                        "description": "provisioningStatus"
+                      },
+                      "service": {
+                        "type": "string",
+                        "description": "service"
+                      }
+                    }
+                  },
+                  "description": "provisionedPlans"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get Current User AD profile",
+        "description": "This action gets the users AD profile",
+        "operationId": "GetUserProfile",
+        "parameters": []
+      }
+    },
+    "/v1.0/me/calendar/events": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "@odata.context": {
+                  "type": "string",
+                  "description": "@odata.context"
+                },
+                "@odata.nextLink": {
+                  "type": "string",
+                  "description": "@odata.nextLink"
+                },
+                "value": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "@odata.etag": {
+                        "type": "string",
+                        "description": "@odata.etag"
+                      },
+                      "id": {
+                        "type": "string",
+                        "description": "id"
+                      },
+                      "createdDateTime": {
+                        "type": "string",
+                        "description": "createdDateTime"
+                      },
+                      "lastModifiedDateTime": {
+                        "type": "string",
+                        "description": "lastModifiedDateTime"
+                      },
+                      "changeKey": {
+                        "type": "string",
+                        "description": "changeKey"
+                      },
+                      "categories": {
+                        "type": "array",
+                        "items": {},
+                        "description": "categories"
+                      },
+                      "transactionId": {
+                        "type": "string",
+                        "description": "transactionId"
+                      },
+                      "originalStartTimeZone": {
+                        "type": "string",
+                        "description": "originalStartTimeZone"
+                      },
+                      "originalEndTimeZone": {
+                        "type": "string",
+                        "description": "originalEndTimeZone"
+                      },
+                      "iCalUId": {
+                        "type": "string",
+                        "description": "iCalUId"
+                      },
+                      "reminderMinutesBeforeStart": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "reminderMinutesBeforeStart"
+                      },
+                      "isReminderOn": {
+                        "type": "boolean",
+                        "description": "isReminderOn"
+                      },
+                      "hasAttachments": {
+                        "type": "boolean",
+                        "description": "hasAttachments"
+                      },
+                      "subject": {
+                        "type": "string",
+                        "description": "subject"
+                      },
+                      "bodyPreview": {
+                        "type": "string",
+                        "description": "bodyPreview"
+                      },
+                      "importance": {
+                        "type": "string",
+                        "description": "importance"
+                      },
+                      "sensitivity": {
+                        "type": "string",
+                        "description": "sensitivity"
+                      },
+                      "isAllDay": {
+                        "type": "boolean",
+                        "description": "isAllDay"
+                      },
+                      "isCancelled": {
+                        "type": "boolean",
+                        "description": "isCancelled"
+                      },
+                      "isOrganizer": {
+                        "type": "boolean",
+                        "description": "isOrganizer"
+                      },
+                      "responseRequested": {
+                        "type": "boolean",
+                        "description": "responseRequested"
+                      },
+                      "seriesMasterId": {
+                        "type": "string",
+                        "description": "seriesMasterId"
+                      },
+                      "showAs": {
+                        "type": "string",
+                        "description": "showAs"
+                      },
+                      "type": {
+                        "type": "string",
+                        "description": "type"
+                      },
+                      "webLink": {
+                        "type": "string",
+                        "description": "webLink"
+                      },
+                      "onlineMeetingUrl": {
+                        "type": "string",
+                        "description": "onlineMeetingUrl"
+                      },
+                      "isOnlineMeeting": {
+                        "type": "boolean",
+                        "description": "isOnlineMeeting"
+                      },
+                      "onlineMeetingProvider": {
+                        "type": "string",
+                        "description": "onlineMeetingProvider"
+                      },
+                      "allowNewTimeProposals": {
+                        "type": "boolean",
+                        "description": "allowNewTimeProposals"
+                      },
+                      "isDraft": {
+                        "type": "boolean",
+                        "description": "isDraft"
+                      },
+                      "hideAttendees": {
+                        "type": "boolean",
+                        "description": "hideAttendees"
+                      },
+                      "recurrence": {
+                        "type": "string",
+                        "description": "recurrence"
+                      },
+                      "onlineMeeting": {
+                        "type": "object",
+                        "properties": {
+                          "joinUrl": {
+                            "type": "string",
+                            "description": "joinUrl"
+                          },
+                          "conferenceId": {
+                            "type": "string",
+                            "description": "conferenceId"
+                          },
+                          "tollNumber": {
+                            "type": "string",
+                            "description": "tollNumber"
+                          }
+                        },
+                        "description": "onlineMeeting"
+                      },
+                      "responseStatus": {
+                        "type": "object",
+                        "properties": {
+                          "response": {
+                            "type": "string",
+                            "description": "response"
+                          },
+                          "time": {
+                            "type": "string",
+                            "description": "time"
+                          }
+                        },
+                        "description": "responseStatus"
+                      },
+                      "body": {
+                        "type": "object",
+                        "properties": {
+                          "contentType": {
+                            "type": "string",
+                            "description": "contentType"
+                          },
+                          "content": {
+                            "type": "string",
+                            "description": "content"
+                          }
+                        },
+                        "description": "body"
+                      },
+                      "start": {
+                        "type": "object",
+                        "properties": {
+                          "dateTime": {
+                            "type": "string",
+                            "description": "dateTime"
+                          },
+                          "timeZone": {
+                            "type": "string",
+                            "description": "timeZone"
+                          }
+                        },
+                        "description": "start"
+                      },
+                      "end": {
+                        "type": "object",
+                        "properties": {
+                          "dateTime": {
+                            "type": "string",
+                            "description": "dateTime"
+                          },
+                          "timeZone": {
+                            "type": "string",
+                            "description": "timeZone"
+                          }
+                        },
+                        "description": "end"
+                      },
+                      "location": {
+                        "type": "object",
+                        "properties": {
+                          "displayName": {
+                            "type": "string",
+                            "description": "displayName"
+                          },
+                          "locationType": {
+                            "type": "string",
+                            "description": "locationType"
+                          },
+                          "uniqueId": {
+                            "type": "string",
+                            "description": "uniqueId"
+                          },
+                          "uniqueIdType": {
+                            "type": "string",
+                            "description": "uniqueIdType"
+                          }
+                        },
+                        "description": "location"
+                      },
+                      "locations": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "displayName": {
+                              "type": "string",
+                              "description": "displayName"
+                            },
+                            "locationType": {
+                              "type": "string",
+                              "description": "locationType"
+                            },
+                            "uniqueId": {
+                              "type": "string",
+                              "description": "uniqueId"
+                            },
+                            "uniqueIdType": {
+                              "type": "string",
+                              "description": "uniqueIdType"
+                            }
+                          }
+                        },
+                        "description": "locations"
+                      },
+                      "attendees": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "description": "type"
+                            },
+                            "status": {
+                              "type": "object",
+                              "properties": {
+                                "response": {
+                                  "type": "string",
+                                  "description": "response"
+                                },
+                                "time": {
+                                  "type": "string",
+                                  "description": "time"
+                                }
+                              },
+                              "description": "status"
+                            },
+                            "emailAddress": {
+                              "type": "object",
+                              "properties": {
+                                "name": {
+                                  "type": "string",
+                                  "description": "name"
+                                },
+                                "address": {
+                                  "type": "string",
+                                  "description": "address"
+                                }
+                              },
+                              "description": "emailAddress"
+                            }
+                          }
+                        },
+                        "description": "attendees"
+                      },
+                      "organizer": {
+                        "type": "object",
+                        "properties": {
+                          "emailAddress": {
+                            "type": "object",
+                            "properties": {
+                              "name": {
+                                "type": "string",
+                                "description": "name"
+                              },
+                              "address": {
+                                "type": "string",
+                                "description": "address"
+                              }
+                            },
+                            "description": "emailAddress"
+                          }
+                        },
+                        "description": "organizer"
+                      }
+                    }
+                  },
+                  "description": "value"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get My Calendar Events",
+        "description": "This action gets the users recent calendar events from Outlook",
+        "operationId": "GetMyEvents",
+        "parameters": []
+      }
+    },
+    "/v1.0/sites/bfee51a7-8343-4667-97cc-64894dfa80cc/lists/6cf8b7b8-5ca6-4144-8d5b-76176f5e3d40/items": {
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "@odata.context": {
+                  "type": "string",
+                  "description": "@odata.context"
+                },
+                "@odata.etag": {
+                  "type": "string",
+                  "description": "@odata.etag"
+                },
+                "createdDateTime": {
+                  "type": "string",
+                  "description": "createdDateTime"
+                },
+                "eTag": {
+                  "type": "string",
+                  "description": "eTag"
+                },
+                "id": {
+                  "type": "string",
+                  "description": "id"
+                },
+                "lastModifiedDateTime": {
+                  "type": "string",
+                  "description": "lastModifiedDateTime"
+                },
+                "webUrl": {
+                  "type": "string",
+                  "description": "webUrl"
+                },
+                "createdBy": {
+                  "type": "object",
+                  "properties": {
+                    "user": {
+                      "type": "object",
+                      "properties": {
+                        "email": {
+                          "type": "string",
+                          "description": "email"
+                        },
+                        "id": {
+                          "type": "string",
+                          "description": "id"
+                        },
+                        "displayName": {
+                          "type": "string",
+                          "description": "displayName"
+                        }
+                      },
+                      "description": "user"
+                    }
+                  },
+                  "description": "createdBy"
+                },
+                "lastModifiedBy": {
+                  "type": "object",
+                  "properties": {
+                    "user": {
+                      "type": "object",
+                      "properties": {
+                        "email": {
+                          "type": "string",
+                          "description": "email"
+                        },
+                        "id": {
+                          "type": "string",
+                          "description": "id"
+                        },
+                        "displayName": {
+                          "type": "string",
+                          "description": "displayName"
+                        }
+                      },
+                      "description": "user"
+                    }
+                  },
+                  "description": "lastModifiedBy"
+                },
+                "parentReference": {
+                  "type": "object",
+                  "properties": {
+                    "siteId": {
+                      "type": "string",
+                      "description": "siteId"
+                    }
+                  },
+                  "description": "parentReference"
+                },
+                "contentType": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "description": "id"
+                    },
+                    "name": {
+                      "type": "string",
+                      "description": "name"
+                    }
+                  },
+                  "description": "contentType"
+                },
+                "fields@odata.context": {
+                  "type": "string",
+                  "description": "fields@odata.context"
+                },
+                "fields": {
+                  "type": "object",
+                  "properties": {
+                    "@odata.etag": {
+                      "type": "string",
+                      "description": "@odata.etag"
+                    },
+                    "id": {
+                      "type": "string",
+                      "description": "id"
+                    },
+                    "ContentType": {
+                      "type": "string",
+                      "description": "ContentType"
+                    },
+                    "Title": {
+                      "type": "string",
+                      "description": "Title"
+                    },
+                    "Modified": {
+                      "type": "string",
+                      "description": "Modified"
+                    },
+                    "Created": {
+                      "type": "string",
+                      "description": "Created"
+                    },
+                    "AuthorLookupId": {
+                      "type": "string",
+                      "description": "AuthorLookupId"
+                    },
+                    "EditorLookupId": {
+                      "type": "string",
+                      "description": "EditorLookupId"
+                    },
+                    "_UIVersionString": {
+                      "type": "string",
+                      "description": "_UIVersionString"
+                    },
+                    "Attachments": {
+                      "type": "boolean",
+                      "description": "Attachments"
+                    },
+                    "Edit": {
+                      "type": "string",
+                      "description": "Edit"
+                    },
+                    "LinkTitleNoMenu": {
+                      "type": "string",
+                      "description": "LinkTitleNoMenu"
+                    },
+                    "LinkTitle": {
+                      "type": "string",
+                      "description": "LinkTitle"
+                    },
+                    "ItemChildCount": {
+                      "type": "string",
+                      "description": "ItemChildCount"
+                    },
+                    "FolderChildCount": {
+                      "type": "string",
+                      "description": "FolderChildCount"
+                    },
+                    "_ComplianceFlags": {
+                      "type": "string",
+                      "description": "_ComplianceFlags"
+                    },
+                    "_ComplianceTag": {
+                      "type": "string",
+                      "description": "_ComplianceTag"
+                    },
+                    "_ComplianceTagWrittenTime": {
+                      "type": "string",
+                      "description": "_ComplianceTagWrittenTime"
+                    },
+                    "_ComplianceTagUserId": {
+                      "type": "string",
+                      "description": "_ComplianceTagUserId"
+                    },
+                    "AppAuthorLookupId": {
+                      "type": "string",
+                      "description": "AppAuthorLookupId"
+                    },
+                    "AppEditorLookupId": {
+                      "type": "string",
+                      "description": "AppEditorLookupId"
+                    },
+                    "Location": {
+                      "type": "string",
+                      "description": "Location"
+                    }
+                  },
+                  "description": "fields"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Create a NEW List Item",
+        "description": "This action creates a List Item in a SharePoint list",
+        "operationId": "CreateListItem",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "fields": {
+                  "type": "object",
+                  "properties": {
+                    "Title": {
+                      "type": "string",
+                      "description": "Title"
+                    },
+                    "Location": {
+                      "type": "string",
+                      "description": "Location"
+                    }
+                  },
+                  "description": "fields"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {
+    "undefined": {
+      "type": "oauth2",
+      "flow": "accessCode",
+      "authorizationUrl": "https://login.windows.net/common/oauth2/authorize",
+      "tokenUrl": "https://login.windows.net/common/oauth2/authorize",
+      "scopes": {
+        "Calendars.Read Sites.Manage.All User.Read": "Calendars.Read Sites.Manage.All User.Read"
+      }
+    }
+  },
+  "security": [
+    {
+      "undefined": [
+        "Calendars.Read Sites.Manage.All User.Read"
+      ]
+    }
+  ],
+  "tags": []
+}
