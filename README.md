@@ -1,2 +1,2 @@
 # powerplatform
-There will be templates to flows &amp; Power Apps on this repo
+There will be templates to the Power Platform projects on this repo
